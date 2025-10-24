@@ -21,7 +21,7 @@ const ASTRONAUTS = [
     {
       id: 'tereshkova',
       name: 'Valentina V. Tereshkova',
-      thumb: '/assets/images/Valentina_Tereshkova.jpg',
+      thumb:'assets/images/Valentina_Tereshkova.jpg',
       role:  'Pilot, Vostok 6',
       bio:   `Tereshkova orbited Earth 48 times in June 1963, becoming the first
               woman in space. A former textile-mill worker and skydiver, her call
@@ -30,7 +30,7 @@ const ASTRONAUTS = [
     {
       id: 'collins',
       name: 'Michael Collins',
-      thumb: '/assets/images/Michael_Collins.jpg',
+      thumb:'assets/images/Michael_Collins.jpg',
       role:  'Command Module Pilot, Apollo 11',
       bio:   `While Armstrong and Aldrin explored the lunar surface, Collins
               remained in lunar orbit aboard Columbia, ensuring a safe rendezvous.
@@ -39,7 +39,7 @@ const ASTRONAUTS = [
     {
       id: 'ride',
       name: 'Sally K. Ride',
-      thumb: '/assets/images/Sally_Ride.jpg',
+      thumb:'assets/images/Sally_Ride.jpg',
       role:  'Mission Specialist, STS-7',
       bio:   `Ride became the first American woman in space on 18 June 1983.
               She flew twice on Challenger, then championed STEM education,
@@ -48,7 +48,7 @@ const ASTRONAUTS = [
     {
       id: 'whitson',
       name: 'Peggy A. Whitson',
-      thumb: '/assets/images/Peggy_Whitson.jpg',
+      thumb:'assets/images/Peggy_Whitson.jpg',
       role:  'Commander, ISS (Exp. 51)',
       bio:   `With 675 days in orbit, Whitson holds the U.S. record for cumulative
               time in space. A biochemist by training, she conducted hundreds of
@@ -57,7 +57,7 @@ const ASTRONAUTS = [
     {
       id: 'pesquet',
       name: 'Thomas Pesquet',
-      thumb: '/assets/images/Thomas_Pesquet.jpg',
+      thumb: 'assets/images/Thomas_Pesquet.jpg',
       role:  'Commander, ISS (Exp. 66)',
       bio:   `An aerospace engineer, airline pilot and ESA astronaut, Pesquet
               performed EVA upgrades to the ISS power grid and became widely known

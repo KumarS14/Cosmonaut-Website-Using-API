@@ -12,7 +12,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url('/assets/starfield.png') center / cover no-repeat;
+    background: url('assets/starfield.png') center / cover no-repeat;
     color: #fff;
     font-family: 'Orbitron', sans-serif;
     overflow: hidden;

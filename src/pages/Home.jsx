@@ -22,7 +22,7 @@ export default function Home() {
         <div className="item">
           <div className="circle">
             <button aria-label="Explore astronauts">
-              <img src="/assets/moon.svg" alt="Moon" />
+              <img src="assets/moon.svg" alt="Moon" />
             </button>
           </div>
           <p>View our astronaut gallery</p>
@@ -30,8 +30,8 @@ export default function Home() {
 
         <div className="item">
           <div className="circle">
-            <Link to="/about" aria-label="About us">
-              <img src="/assets/helmet.svg" alt="Helmet" />
+            <Link to="about" aria-label="About us">
+              <img src="assets/helmet.svg" alt="Helmet" />
             </Link>
           </div>
           <p>Learn about this project</p>
@@ -39,8 +39,8 @@ export default function Home() {
 
         <div className="item">
           <div className="circle">
-            <Link to="/future" aria-label="Future missions">
-              <img src="/assets/telescope.jpg" alt="Telescope" />
+            <Link to="future" aria-label="Future missions">
+              <img src="assets/telescope.jpg" alt="Telescope" />
             </Link>
           </div>
           <p>Discover upcoming expeditions</p>
