@@ -12,7 +12,7 @@ const ASTRONAUTS = [
     {
       id: 'armstrong',
       name: 'Neil A. Armstrong',
-      thumb: '/assets/images/Neil_Armstrong.jpg',
+      thumb: 'assets/images/Neil_Armstrong.jpg',
       role:  'Commander, Apollo 11',
       bio:   `On 20 July 1969 Armstrong became the first person to walk on the
               Moon. An aeronautical engineer and naval aviator, he logged more
