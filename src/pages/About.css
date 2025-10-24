@@ -1,0 +1,87 @@
+@import url('./Home.css'); /* pulls shared nav rules so they stay in one place */
+  
+/* fluid sizes reused from Home */
+:root {
+    --fs-body: clamp(1rem, 0.95rem + 0.5vw, 1.4rem);
+    --fs-h1:   clamp(2.4rem, 1.8rem + 2.5vw, 4rem);
+    --fs-h2:   clamp(1.6rem, 1.2rem + 1.5vw, 2.6rem);
+  }
+  
+  /* background canvas */
+  .about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('/assets/starfield.png') center / cover no-repeat;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* navigation */
+  .top-nav { /* identical rules as in Home.css */ }
+  
+ 
+  /* banner */
+  .banner {
+    text-align: center;
+    padding: 2rem 0 1.4rem;
+    margin-top: 3.2rem; /* space for fixed nav */
+  }
+  .banner h1 { font-size: var(--fs-h1); margin: 0; }
+  .banner hr { width: 88%; border: 0; border-top: 4px solid #fff; margin: 0.6rem auto 1rem; }
+  .banner h2 { font-size: var(--fs-h2); margin: 0; }
+  
+  /* main text column */
+  .content {
+    flex: 1;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 1.2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: var(--fs-body);
+    line-height: 1.6;
+  }
+  .content a { color: #aeeaff; text-decoration: underline; }
+  .content a:hover { text-decoration: none; }
+  
+  /* contact form */
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+  /* form fields */
+  .contact-form span { display: block; margin-bottom: 0.4rem; }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #aeeaff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-family: inherit;
+    font-size: var(--fs-body);
+  }
+  /* placeholder text */
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder { color: #cfeaff; }
+  .contact-form button {
+    align-self: flex-start;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid #aeeaff;
+    border-radius: 8px;
+    background: #0f3b5c;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.25s;
+  }
+  /* button hover */
+  .contact-form button:hover { background: #14618f; }
+  

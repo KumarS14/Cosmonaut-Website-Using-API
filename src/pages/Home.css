@@ -1,0 +1,90 @@
+/* fluid type and circle size */
+:root{
+  --cap: clamp(1rem, 0.9rem + 0.7vw, 1.6rem);
+  --h2 : clamp(2rem, 1.4rem + 2vw, 3.4rem);
+  --h1 : clamp(2.6rem, 1.8rem + 3vw, 4.4rem);
+  --dia: clamp(200px, 22vw, 420px);
+  --fs-h3: clamp(1.4rem, 1.1rem + 1vw, 2rem);
+  --fs-p : clamp(1rem , 0.95rem + 0.5vw, 1.4rem);
+}
+
+  
+  /* background canvas */
+  .home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('/assets/starfield.png') center / cover no-repeat;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+  }
+  
+ 
+  
+  /* banner */
+  .banner {
+    text-align: center;
+    padding: 2rem 0 1.4rem;
+    margin-top: 3.2rem;      /* push below fixed nav */
+  }
+  .banner h1 { font-size: var(--h1); margin: 0; }
+  .banner hr { width: 88%; border: 0; border-top: 4px solid #fff; margin: 0.6rem auto 1rem; }
+  .banner h2 { font-size: var(--h2); margin: 0; }
+  
+  /* vertical stack */
+  .row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
+  }
+  
+  /* circle + caption */
+  .item {
+    width: var(--dia);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .circle {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .circle button,
+  .circle img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .circle:hover,
+  .circle:focus-within {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.8);
+  }
+  .item p {
+    margin: 0.8rem 0 0;
+    font-size: var(--cap);
+    line-height: 1.25;
+    max-width: 340px;
+  }
+  
+  /* mobile tweaks */
+  @media (max-width: 600px) {
+    .row { gap: 3rem; }
+    .item { width: clamp(160px, 70vw, 280px); }
+    .banner h1 { font-size: clamp(2.2rem, 7vw, 3rem); }
+    .banner h2 { font-size: clamp(1.2rem, 4.5vw, 1.6rem); }
+  }
+  
