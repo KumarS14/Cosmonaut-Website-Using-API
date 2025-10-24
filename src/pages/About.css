@@ -80,7 +80,7 @@
     background: #0f3b5c;
     color: #fff;
     cursor: pointer;
-    transition: background 0.25s;
+    
   }
   /* button hover */
   .contact-form button:hover { background: #14618f; }

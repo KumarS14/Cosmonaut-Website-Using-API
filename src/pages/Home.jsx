@@ -1,51 +1,47 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import NavBar from '../components/NavBar'
-import './Home.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import NavBar from '../components/NavBar';
+import './Home.css';
 
-/**
- * Landing page with three calls-to-action:
- * List of cosmonauts, About, Future missions.
- */
+// Import the images
+import moonImage from '../assets/moon.svg';
+import helmetImage from '../assets/helmet.svg';
+import telescopeImage from '../assets/telescope.jpg';
+
 export default function Home() {
   return (
     <section className="home" aria-label="Homepage">
       <NavBar />
-
-      <header className="banner">
-        <h1>The Cosmonauts Of The Round Table</h1>
-        <hr />
-        <h2>The Life And Legacy Of The World’s Finest</h2>
-      </header>
-
+      {/* ... header ... */}
       <div className="row">
         <div className="item">
           <div className="circle">
             <button aria-label="Explore astronauts">
-              <img src="assets/moon.svg" alt="Moon" />
+              {/* Use the imported variable */}
+              <img src={moonImage} alt="Moon" />
             </button>
           </div>
           <p>View our astronaut gallery</p>
         </div>
-
         <div className="item">
           <div className="circle">
-            <Link to="about" aria-label="About us">
-              <img src="assets/helmet.svg" alt="Helmet" />
+            <Link to="/about" aria-label="About us"> {/* Changed to /about */}
+              {/* Use the imported variable */}
+              <img src={helmetImage} alt="Helmet" />
             </Link>
           </div>
           <p>Learn about this project</p>
         </div>
-
         <div className="item">
           <div className="circle">
-            <Link to="future" aria-label="Future missions">
-              <img src="assets/telescope.jpg" alt="Telescope" />
+            <Link to="/future" aria-label="Future missions"> {/* Changed to /future */}
+              {/* Use the imported variable */}
+              <img src={telescopeImage} alt="Telescope" />
             </Link>
           </div>
           <p>Discover upcoming expeditions</p>
         </div>
       </div>
     </section>
-  )
+  );
 }
