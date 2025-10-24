@@ -1,3 +1,6 @@
+/* nav bar shares rules from Home.css */
+  @import url('./Home.css');
+
 /* fluid scale */
 :root {
     --fs-p  : clamp(1rem, 0.95rem + 0.5vw, 1.4rem);
@@ -17,8 +20,7 @@
     overflow-x: hidden;
   }
   
-  /* nav bar shares rules from Home.css */
-  @import url('./Home.css');
+
   
   /* banner */
   .banner {
